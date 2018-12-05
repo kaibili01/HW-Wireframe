@@ -1,36 +1,100 @@
-/**
- * Relative Position: sets boxes relative to its original location
- * (i.e. below or left of where the element would normally be)
- **/
+* {
+  box-sizing: border-box;
+}
 
- .box-set {
-    position: relative;
-    height: 400px;
-    background: darkgray;
-  }
+body {
+  font-family: 'Arial', 'Helvetica Neue', Arial, Helvetica, sans-serif;
+  color: #777;
+  background: #777;
+  width: 960;
+  font-size: 18px; 
+}
   
-  .box {
-    /* relative positioning */
-    position: relative;
-    width: 150px;
-    height: 150px;
-    background: #2db34a;
-    border: 2px solid black;
-  }
-  
-  .box-1 {
-    top: 20px;
-  }
-  
-  .box-2 {
-    left: 40px;
-    position: sticky;
-  }
-  
-  .box-3 {
-    right: 20px;
-    bottom: -10px;
-  }
-  .box-4 {
-  }
-  
+}
+
+h1,p{
+  color: #777;
+  background: #ebebeb;
+
+}
+.section{
+  float: left;
+  padding-right: 10px;
+}
+
+.aside{
+  float: left;
+   
+}
+
+footer {
+  padding: 20px;
+  clear: both;
+  background: #ebebeb;
+  width: 990px;
+  padding: 20px;
+  text-align: center;
+}
+
+/* clearfix is applied to the parent container to 'fix' the flow of the page */
+
+.clearfix::after {
+  content: "";
+  display: block;
+  clear: both;
+
+
+
+  /**position:absolute;**/
+ /**align:right;**/
+  /**right: -30px;**/
+  /**bottom: 0;**/
+  /**padding: 20px;**/
+  /**text-align: center;**/
+
+/**#fixed {
+  position: fixed;
+  top: 0;
+  left: 0;
+  padding: 40px;
+  margin: 0;
+  text-align: center;
+  background: #eee;
+}
+
+.wrapper {
+  width: 600px;
+  padding: 20px;
+  margin: 0 auto;
+}
+
+h1 {
+  margin-bottom: 20px;
+  font-size: 36px;
+  line-height: 45px;
+}
+
+p {
+  margin-bottom: 20px;
+  font-size: 18px;
+  line-height: 28px;
+}
+
+#relative {
+  position: relative;
+  height: 200px;
+  padding: 20px;
+  margin-bottom: 20px;
+  text-align: center;
+  background: #eee;
+}
+
+#absolute {
+  position: absolute;
+  right: -30px;
+  bottom: 0;
+  width: 250px;
+  padding: 20px;
+  text-align: center;
+  background: #999;
+}
